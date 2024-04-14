@@ -1,5 +1,6 @@
 pandas
 snowflake-connector-python[pandas]
 python-dotenv
+jupyter
 ipykernel
 jupyter-black
