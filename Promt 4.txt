@@ -1,4 +1,0 @@
-﻿Promt 4
-
-
-I would create an ETL job that uses python to connect to each SFTP server using a library like paramiko. Next I would download the files from each server and connect to snowflake using the Python Snowflake connector and load each file into snowflake. Once in Snowflake I would clean the names by lower casing them. I would generate an id for each person using the hash function based on the name and dob fields. Then I would union the three tables together and add a field to represent each team so we can identify which rows come from file A, B, or C. Once the final dataset is generated, I would group by each unique id and month and count the number of rows having a count > 2 which identify people that have been seen often.
